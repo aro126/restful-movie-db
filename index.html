@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Movies Database - MongoDB</title>
+
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="topbar">
+        <a href=""><h1>MongoDB Movies Database</h1></a>
+        <form id="search" onsubmit="">
+            <input type="submit" disabled style="display: none" aria-hidden="true" />
+            <label for="results">Search</label>
+            <input type="text" id="results" name="search" value="">
+            <input type="button" id="button2" value="Click" onClick="searchMovies(this.form.search.value)">
+        </form>
+    </div>
+    <div id="root"></div>
+</body>
+<script type = "text/javascript" src="scripts.js"></script> 
+</html>
